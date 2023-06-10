@@ -16,8 +16,8 @@ import org.springframework.context.annotation.Import;
 @DataJpaTest
 class JpaRepositoryTest {
 
-    private ArticleRepository articleRepository;
-    private ArticleCommentRepository articleCommentRepository;
+    private final ArticleRepository articleRepository;
+    private final ArticleCommentRepository articleCommentRepository;
 
     public JpaRepositoryTest(@Autowired ArticleRepository articleRepository,
                              @Autowired ArticleCommentRepository articleCommentRepository) {
