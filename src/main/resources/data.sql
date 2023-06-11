@@ -1,3 +1,8 @@
+-- 테스트 계정
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at,
+                          modified_by)
+values ('woong', 'test1234', 'woong', 'woong@mail.com', 'I am woong.', now(), 'woong', now(), 'woong')
+;
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at)
 values ('Duis mattis egestas metus.', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 'Turquoise', 'Shel',
         'Cherri', '2023-02-23 09:35:21', '2023-03-07 21:34:35');
